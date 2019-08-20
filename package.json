@@ -1,0 +1,34 @@
+{
+  "name": "@mujo/ingress",
+  "version": "0.1.0",
+  "description": "React Components for rendering components in remote places",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Jacob Lowe",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@emotion/core": "^10.0.14",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-import-order-alphabetical": "0.0.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "prettier": "^1.17.1",
+    "react": "^16.8.6"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.6"
+  }
+}
