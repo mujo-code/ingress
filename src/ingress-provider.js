@@ -8,8 +8,11 @@ const TYPES = {
   REMOVE: 'remove',
 }
 
-const intialState = { targets: {} }
-const portalReducer = (state = intialState, { type, children, target }) => {
+export const intialState = { targets: {} }
+export const portalReducer = (
+  state = intialState,
+  { type, children, target }
+) => {
   switch (type) {
     case TYPES.ADD: {
       return {
