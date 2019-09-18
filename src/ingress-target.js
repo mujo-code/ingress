@@ -1,7 +1,7 @@
-import React, { useContext } from 'react'
+import React, { useContext, memo } from 'react'
 import { context } from './ingress-provider'
 
-export const IngressTarget = ({ id = 'default' }) => {
+export const IngressTarget = memo(({ id = 'default' }) => {
   const { targets } = useContext(context)
   const children = targets[id] || []
   return (
@@ -11,4 +11,6 @@ export const IngressTarget = ({ id = 'default' }) => {
       ))}
     </React.Fragment>
   )
-}
+})
+
+IngressTarget.displayName = 'IngressTarget'
